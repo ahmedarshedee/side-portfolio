@@ -1,6 +1,8 @@
-// Type declarations for gsap-trial plugin modules (no official @types package exists)
+// gsap/SplitText and gsap/ScrollSmoother are bundled with the standard gsap package
+// (GSAP is now fully free as of April 30, 2025 — no gsap-trial needed)
+// These re-exports ensure TypeScript recognises the submodule paths.
 
-declare module "gsap-trial/SplitText" {
+declare module "gsap/SplitText" {
     export class SplitText {
         chars: Element[];
         words: Element[];
@@ -11,7 +13,7 @@ declare module "gsap-trial/SplitText" {
     }
 }
 
-declare module "gsap-trial/ScrollSmoother" {
+declare module "gsap/ScrollSmoother" {
     export class ScrollSmoother {
         static create(vars?: any): ScrollSmoother;
         static refresh(soft?: boolean): void;
